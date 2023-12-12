@@ -1,0 +1,7 @@
+{{ object.num_recepteur }}
+{{ object.recepteur.name }}
+{{ object.num_emetteur }}
+{{ object.emetteur.name }}
+{{ object.installation }}
+{{ object.message }}
+{{ object.date_message }}

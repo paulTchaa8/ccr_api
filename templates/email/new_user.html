@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block content %} 
+    <table align="center" border="0" cellpadding="0" cellspacing="0" 
+           width="650" bgcolor="white" style="border-radius: 30px;"> 
+        <tbody style="border-radius: 100px; background-color: #e0edc6;"> 
+            <tr> 
+                <td align="center"> 
+                    <table align="center" border="0" cellpadding="0" 
+                           cellspacing="0" class="col-650" width="650"> 
+                        <tbody> 
+                            <tr> 
+                                <td align="center" style="background-color: #08cc0a; 
+                                           height: 80px;border-top-left-radius: 20px;
+                                            border-top-right-radius: 20px;"> 
+  
+                                    <a href="#" style="text-decoration: none;"> 
+                                        <h1 style="color:white; 
+                                                  font-weight:bold; padding-top:30px"> 
+                                            Bienvenue sur <strong>{{ site_name }}</strong> ! 
+                                        </h1> 
+                                    </a> 
+                                </td> 
+                            </tr> 
+                        </tbody> 
+                    </table> 
+                </td> 
+            </tr>
+            <tr>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" class="col-650" width="650">
+                <tbody style="background-color: #a3e571;">
+                    <tr style="height: 100px;"> 
+                        <td align="center" style="border: none;  
+                                   padding: 20px 20px;"> 
+          
+                            <p style="color:#fff;">
+                                Cliquez ci-dessous pour confirmer votre compte.<br>
+                                    <p style="height: 20px;"></p>
+                                <a href="{{ url_confirm }}" title="Vérifier votre compte" target="_blank" style="background-color: #08cc0a;
+                                border: none;
+                                border-radius:4px; 
+                                height: 35px;
+                                width: 200px;
+                                color: #FFF;
+                                font-size: 18;
+                                padding: 10px 15px;
+                                ">
+                                      Valider mon compte
+                                </a>
+                                
+                            </p>
+                    
+                        </td> 
+                    </tr> 
+                   
+                    <tr style="display: inline-block;"> 
+                        <td style="height: 150px; 
+                                   padding-bottom: 20px; 
+                                   border: none;
+                                   width: 650px; "
+                                   align="center"
+                                   > 
+                            
+                            <p style="color:#fff;">
+                                Pour faciliter votre connexion, enregistrez cette URL : <br/>
+                                <a href="{{ login_url }}" style="font-size: 18px ;color:#FFF;">
+                                    {{ login_url }}
+                                </a>.
+                            </p>
+                            <p style="height: 15px;"></p>
+                               <p style="color:#FFF;">
+                                Utilisateur : <br/>
+                                <strong style="font-size: 18px">{{ nom }} {{ prenom }}</strong>
+                            </p>
+                            
+                        </td> 
+                    </tr>
+                </tbody>
+            </table>
+
+            </tr>
+        </tbody> 
+    </table> 
+
+{% endblock %}

@@ -1,0 +1,23 @@
+Numéro de version: V0.01.01
+Auteur: S69 Frank TCHA'A
+Date: 12/12/2023
+Contenu de la livraison:
+1. Intialisation projet backend ccr_api backend
+	- 
+
+Fichiers modifiés:
+	.gitignore
+	accounts/
+	ccr_api/
+	contenu/
+	manage.py
+	media/
+	requirements.txt
+	templates/
+
+Fonctions modifées:
+	-
+
+Action manuelle:
+1. Relancer le serveur httpd (sudo systemctl restart httpd)
+----------------------------------------------------------------------------------
